@@ -2,7 +2,8 @@
 {% load static %}
 {% block content %}
 {% load crispy_forms_tags %}
-<script type="text/javascript" src="{% static 'js/app4.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
+<script type="text/javascript" src="{% static 'js/app4_4.js' %}"></script>
 <section class="vh-50">
     <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
@@ -17,9 +18,8 @@
                                 <button class="btn btn-outline-light btn-lg px-5" type="submit">Registrarse</button>
                             </div>
                             <div>
-                                <p class="mb-0 fw-bold fs-4">Ya tienes una cuenta? <a href="{% url 'login' %}"
-                                        class="text-white-50 fw-bold fs-4">Iniciar sesion</a></p>
-                                <a href="{% url 'home' %}" class="text-white-50 fw-bold fs-4">Volver al inicio</a>
+                                <p class="mb-0 fw-bold fs-4">Ya tienes una cuenta? <a class="text-white-50 fw-bold fs-4" href="{% url 'login' %}">Iniciar sesion</a></p>
+                                <a class="text-white-50 fw-bold fs-4" href="{% url 'home' %}" >Volver al inicio</a>
                             </div>
                         </form>
                     </div>

@@ -1,7 +1,7 @@
 {% extends 'app/base.html' %}
 {% load static %}
 {% block content %}
-    <title>Carrito - Tiendita</title>
+<title>Carrito - Tiendita</title>
 </head>
 <body class="gradient-custom">
     {% load humanize %}
@@ -12,12 +12,12 @@
                     <div class="card bg-dark text-white" style="border-radius: 1rem;">
                         <div class="card-body p-5 text-center">
                             <h2>Carrito</h2>
-                            <ul id="carrito" class="list-group"></ul>
+                            <ul class="list-group" id="carrito"></ul>
                             <hr>
                             <div class="">
                                 <ul>
                                     <li class="submenu">
-                                        <div id="carrito" class="">
+                                        <div class="" id="carrito">
                                             <table class="table text-white">
                                                 <thead>
                                                     <tr>
@@ -53,8 +53,8 @@
                                 </ul>
                             </div>
                             <p class="text-right">Total: 34.649<span id="total"></span>$</p>
-                            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-                            <button id="boton-comprar" class="btn btn-primary">Comprar</button>
+                            <button class="btn btn-danger" id="boton-vaciar">Vaciar</button>
+                            <button class="btn btn-primary" id="boton-comprar">Comprar</button>
                         </div>
                     </div>
                 </div>

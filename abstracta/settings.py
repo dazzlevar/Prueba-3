@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'crispy_forms',
     'crispy_bootstrap5',
+    'rest_framework',
+    'rest_tiendita',
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
@@ -91,8 +93,8 @@ WSGI_APPLICATION = 'abstracta.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
-        'NAME': '127.0.0.1:1521/xe',
-        'USER': 'c##adm',
+        'NAME': '127.0.0.1:1521/orcl1',
+        'USER': 'c#adm',
         'PASSWORD': 'adm123',
         'TEST': {
             'USER': 'default_test',

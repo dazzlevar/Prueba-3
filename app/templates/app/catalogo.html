@@ -1,12 +1,7 @@
 {% extends 'app/base.html' %}
 {% load static %}
-
-
-
-
 {% block content %}
 {% load humanize %}
-
 {% load humanize %}
 <br>
 <br>
@@ -15,10 +10,9 @@
 <div class="container productos mt-5">
     {% for p in productos %}
     <div class="producto d-flex justify-content-center">
-        <div class="card contenedor_producto border border-dark rounded-4"
-            style=" background-color: rgb(122, 217, 200);">
+        <div class="card contenedor_producto border border-dark rounded-4" style=" background-color: rgb(122, 217, 200);">
             {% if p.imagen %}
-            <img src="{{ p.imagen.url }}" style="width:100%; padding:1%;" alt="imagen producto" class="card-img-top">
+            <img class="card-img-top" src="{{ p.imagen.url }}" style="width:100%; padding:1%;" alt="imagen producto" >
             {% endif %}
             <div class="card-body detalle" style="background-color: rgb(151, 237, 236);">
                 <h5>Categoria: {{ p.nombreCat | capfirst }}</h5>
