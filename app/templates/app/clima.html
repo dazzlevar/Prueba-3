@@ -27,14 +27,11 @@
             </div>
             <table class="table table-dark table-striped table-hover table-responsive-sm fs-4">
                 <tr>
-                    <th>Codigo del Pais</th>
                     <th>Ciudad/Comuna</th>
-                    <th>Latitud</th>
-                    <th>Longitud</th>
                     <th>Clima Actual</th>
-                    <th>Temperatura Actual</th>
-                    <th>Temperatura Minima</th>
-                    <th>Temperatura Maxima</th>
+                    <th>T° Actual</th>
+                    <th>T° Minima</th>
+                    <th>T° Maxima</th>
                 </tr>
                 <tr id="resultado"></tr>
             </table>
@@ -53,10 +50,7 @@
                 $.get("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&lang=sp&units=metric&appid=e7f7bdc257804d7dd9bc1b7af07e2a26", function (data) {
                     console.log(data);
                     $("#resultado").empty();
-                    $("#resultado").append("<td>" + data.sys.country + "</td>");
                     $("#resultado").append("<td>" + data.name + "</td>");
-                    $("#resultado").append("<td>" + data.coord.lat + "</td>");
-                    $("#resultado").append("<td>" + data.coord.lon + "</td>");
                     if (data.weather[0].main == "Clear") {
                         $("#resultado").append("<td> Despejado</td>");
                     } else if (data.weather[0].main == "Cloudy") {

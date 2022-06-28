@@ -25,14 +25,22 @@
     <link rel="stylesheet" href="{% static 'css/estilos2.css' %}">
     <link rel="preload" href="{% static 'css/estail.css' %}" as="style">
     <link rel="stylesheet" href="{% static 'css/estail.css' %}">
+    <link rel="preload" href="{% static 'css/stail2_2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/stail2_2.css' %}">
+    <link rel="preload" href="{% static 'css/responsive_3.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive_3.css' %}">
+
     {% endblock %}
 </head>
 <body class="gradient-custom">
     <header id="header">
-        <img class="menu" id="menu" src="{% static 'img/menuiconwhite.png' %}" alt="menu">
+        <img class="menu" id="menu" src="/static/img/menuiconwhite.png" alt="menu">
         <div class="contenedor_logo">
             <img class="logo" src="{% static 'img/logo.png' %}" alt="logo">
             <a href="{% url 'home' %}" style="color:black;"><h2 style="color:white;">Abstracta</h2></a>
+            <div id="contenedor__carrito">
+                <a class="nav__fonts" href="{% url 'carrito' %}"><i class="bi bi-cart3"></i></a>
+            </div>
         </div>
         <div>
             <nav class="h5" id="nav">
@@ -57,6 +65,7 @@
                     <li><a href="{% url 'carrito' %}"><i class="bi bi-cart3"></i></a></li>
                 </ul>
             </nav>
+            
         </div>
     </header>
     

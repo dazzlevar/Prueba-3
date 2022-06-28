@@ -1,7 +1,7 @@
 from django.urls import path
 from .views import home, registro, contacto, agregar_producto, listar_productos, \
     modificar_producto, eliminar_producto, catalogo, clima, carrito, pagar, settings, \
-    historial, direcciones, cupones, metodos_de_pago, despacho
+    historial, direcciones, cupones, metodos_de_pago, despacho, pago
 
 urlpatterns = [
     path('', home, name = "home"),
@@ -21,4 +21,5 @@ urlpatterns = [
     path('cupones', cupones, name = 'cupones'),
     path('metodos_de_pago', metodos_de_pago, name = 'metodos_de_pago'),
     path('despacho', despacho, name = 'despacho'),
+    path('pago', pago, name = 'pago'),
 ]

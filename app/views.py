@@ -138,3 +138,6 @@ def metodos_de_pago(request):
 @login_required
 def despacho(request):
     return render(request, 'app/settings/settings_despacho.html')
+
+def pago(request):
+    return render(request, 'app/pago.html')

@@ -1,3 +1,21 @@
+#boton-vaciar {
+    width: 2rem;
+}
+
+.btnComprar {
+    display: none;
+    width: 24.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.detalle {
+    height: 14rem;
+}
+
+.card:hover .btnComprar {
+    display: block;
+}
+
 /* Pago section */
 .pago__grid {
     display: grid;
@@ -173,3 +191,4 @@ li {
     color: aliceblue;
     margin-top: 1rem;
 }
+

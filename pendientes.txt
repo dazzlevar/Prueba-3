@@ -1,4 +1,8 @@
 - reducir links excesivos de Bootstrap, jquery y weas
+    Design for desktop displays from 1024×768 through 1920×1080
+    Design for mobile displays from 360×640 through 414×896
+    Design for tablet displays from 601×962 through 1280×800
+-- {% block title %} en todas las páginas
 - Responsive design (Smartphone, Tablet y PC)
 - Corregir carrito de compras
 - Mostrar stock real de los productos disponibles
@@ -7,6 +11,7 @@
 - Permitir generar descuentos o promociones en la página principal (rol = adm) y hacer que estos descuentos sean validos al pagar
 - Hacer funcion de suscripción/dessuscripcion, realizar API en donde valide si el usuario está suscrito o no. 
 - Al estar suscrito se otorga un 5% de descuento al momento de pagar
+- Cambiar botones (al presionar uno el boton se queda hundido, y cuando se presiona el otro el anterior se levante y el otro pasa estar hundido)
 
 
 - ¿"Se deben crear mantenedores para la información relativa a clientes, usuarios, productos, 
