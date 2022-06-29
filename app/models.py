@@ -30,3 +30,18 @@ class Contacto(models.Model):
     avisos = models.BooleanField()
     def __str__(self):
         return self.nombre
+
+opciones_pago = [
+    [0, 'Transferencia bancaria'],
+    [1, 'Tarjeta de debito'],
+    [2, 'Tarjeta de crédito'],
+]
+
+class Datos(models.Model):
+    nombre = models.CharField(max_length = 50)
+    telefono = models.IntegerField(verbose_name = 'Numero de contacto')
+    correo = models.EmailField()
+    metodo_pago = models.IntegerField(choices = opciones_pago) 
+    cupon = models.IntegerField(verbose_name = 'Cupon de descuento')
+    def __str__(self):
+        return self.nombre

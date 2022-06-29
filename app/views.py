@@ -1,7 +1,7 @@
 from pprint import pp
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Producto
-from .forms import CustomUserCreationForm, ContactoForm, ProductoForm
+from .forms import CustomUserCreationForm, ContactoForm, ProductoForm, DatosForm
 from django.contrib import messages
 from django.core.paginator import Paginator
 from django.http import Http404
@@ -113,7 +113,7 @@ def clima(request):
     return render(request, 'app/clima.html')
 
 def pagar(request):
-    return render(request, 'app/pagar.html')
+    return render(request, 'app/pago/pagar.html')
 
 @login_required
 def settings(request):
@@ -140,4 +140,15 @@ def despacho(request):
     return render(request, 'app/settings/settings_despacho.html')
 
 def pago(request):
-    return render(request, 'app/pago.html')
+    data = {
+        'form': DatosForm()
+    }
+    if request.method == 'POST':
+        formulario = ProductoForm(data = request.POST)
+        if formulario.is_valid(): 
+            formulario.save()
+            messages.success(request, 'Compra realizada con exito.')
+        else:
+            data["form"] = formulario
+
+    return render(request, 'app/pago/pago.html', data)

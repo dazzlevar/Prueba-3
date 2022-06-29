@@ -192,3 +192,13 @@ li {
     margin-top: 1rem;
 }
 
+/* Pagar sin estar registrado */
+.pagar__width {
+    width: 35rem;
+}
+
+.reloj {
+    color:white;
+    font-size: 2rem;
+    transform: translate(500px, 0px);
+}

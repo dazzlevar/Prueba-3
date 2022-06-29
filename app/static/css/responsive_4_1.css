@@ -214,6 +214,21 @@
         margin-bottom: 1rem;
     }
 
+    .pagar__margin {
+        margin-right: 1.5rem!important;
+    }
+
+    .pagar__marginInfo {
+        margin-left: 2rem;
+    }
+
+    .pagar__width {
+        width: 36.5rem;
+    }
+
+    .reloj {
+        transform: translate(96px, 10px);
+    }
 }
 
 
@@ -394,5 +409,13 @@
         margin-left: 3rem;
         margin-right: 3rem;
         width: 42rem;
+    }
+
+    .pago__dimention2 {
+        width: 97.666667%;
+    }
+
+    .reloj {
+        transform: translate(-74px, 29px);
     }
 }

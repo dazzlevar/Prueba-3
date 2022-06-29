@@ -52,6 +52,11 @@ footer {
     outline-color: #a02d76;
 }
 
+.icon__subir:hover {
+    background-color: #00ff2af1;
+    outline-color: #a02d76;
+}
+
 @keyframes shake {
     10%{transform: rotate(15deg);}
     20%{transform: rotate(-15deg);}
